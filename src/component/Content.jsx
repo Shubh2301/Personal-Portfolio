@@ -1,9 +1,10 @@
-import React from 'react'
 import { projects } from '../data/Project'
 import { ExternalLink, Github } from 'lucide-react'
 import { motion } from 'motion/react'
+import SkillsContent from './skills/skillsContent'
 
-const Content = () => {
+
+const Content = ({activeTab}) => {
     const contentVariants={
         hidden:{opacity:0, y:-5},
         visible:{opacity:1,y:0}
@@ -14,7 +15,7 @@ const Content = () => {
             {
                 projects.map((project, index) => {
                     return (
-                        <motion.div className='bg-gray-800 rounded-lg overflow-hidden' initial="hidden" animate="visible" variants={contentVariants}>
+                        <motion.div className='bg-gray-800 rounded-lg overflow-hidden' initial="hidden" animate="visible" variants={contentVariants} transition={{delay:index*0.2}}>
                             <img src={project.Image} alt={project.title} className='w-full h-48 object-cover' />
                             <div className="p-4">
                                 <h3 className='text-xl font-bold mb-2'> {project.title} </h3>
@@ -49,9 +50,27 @@ const Content = () => {
         </div>
         )
     }
+    const renderContent=()=>{
+        switch(activeTab){
+            case "projects":
+            return renderProjects();
+
+            case "skills":
+            return <SkillsContent/>;
+
+            case "about":
+            return "about";
+
+            case "contact":
+            return "contact";
+
+            default:
+            break;
+        }
+    }
     return (
         <motion.div initial="hidden" animate="visible" variants={contentVariants} className='flex-1 overflow-auto bg-gray-900 text-gray-100'>
-            {renderProjects()}
+            {renderContent()}
 
         </motion.div>
         

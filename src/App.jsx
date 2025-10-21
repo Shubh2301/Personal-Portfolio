@@ -12,7 +12,7 @@ function App() {
     <div className='bg-gray-900 h-screen text-white flex'>
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       <Explore/>
-      <Content/>
+      <Content activeTab={activeTab}/>
 
     </div>
   )
