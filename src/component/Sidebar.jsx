@@ -6,7 +6,7 @@ const Sidebar = ({activeTab,setActiveTab}) => {
     const sidebarItems=[
         {icon: <Files size={26}/> ,id:"projects",label:"projects"},
         {icon: <Code  size={26}/> ,id:"skills",label:"skills"},
-        {icon: <User size={26}/> ,id:"about",label:"about"},
+         {icon: <User size={26}/> ,id:"about",label:"about"},
         {icon: <Mail size={26}/> ,id:"contact",label:"contact"},
     ]
   return (

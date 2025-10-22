@@ -2,6 +2,8 @@ import { projects } from '../data/Project'
 import { ExternalLink, Github } from 'lucide-react'
 import { motion } from 'motion/react'
 import SkillsContent from './skills/skillsContent'
+import About from './about/About'
+import Contact from './contact/Contact'
 
 
 const Content = ({activeTab}) => {
@@ -59,10 +61,10 @@ const Content = ({activeTab}) => {
             return <SkillsContent/>;
 
             case "about":
-            return "about";
+            return <About/>;
 
             case "contact":
-            return "contact";
+            return <Contact/>;
 
             default:
             break;
