@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import Sidebar from './component/Sidebar'
-import Explore from './component/Explore'
 import Content from './component/Content'
+import Explorer from './component/Explorer'
+import { useState } from 'react'
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='bg-gray-900 h-screen text-white flex'>
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <Explore/>
+      <Explorer activeTab={activeTab}/>
       <Content activeTab={activeTab}/>
 
     </div>

@@ -12,8 +12,7 @@ const Contact = () => {
         <div>
             <motion.div initial={{opacity:0,x:-20}} animate={{opacity:1,x:0}} className='mb-8'>
                 <p className='text-gray-300 mb-6'>
-                    I'm always intresated in hearing about new projects and <br />
-                    opportunities.Feel free to reach out usong the contact form  or through any of the method below
+                   Feel free to reach out to me through any of the social platforms.I'm always open to new opportunities and connections.
                 </p>
                 <div className="space-y-4">
                     <div className='flex items-center text-gray-300'>

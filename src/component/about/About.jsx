@@ -3,10 +3,10 @@ import { Github, Linkedin } from 'lucide-react'
 
 const About = () => {
   return (
-    <div className='p-6 max-w-4xl'>
+    <div className='p-6 max-w-4xl flex'>
       <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.5}} className='bg-gray-800 rounded-lg p-6'>
         <h2 className='text-2xl font-bold mb-5'>About Me</h2>
-        <p className='mb-1 text-gray-200 text-l'>Hi,I'm Shubham,a passionate Front-End Developer with a strong foundation in building responsive and intractive web interface. I enjoy turning ideas into visually appealing,user-friendly websites. I specialize in bringing design to life with React.js and smooth animation using GSAP. As a fresher,I'm constantly exploring new web technologies and improving my skill to build projects that make a real impact.</p>
+        <p className='mb-1 text-gray-400 text-lg'>Hi,I'm Shubham,a passionate Front-End Developer with a strong foundation in building responsive and intractive web interface. I enjoy turning ideas into visually appealing,user-friendly websites. I specialize in bringing design to life with React.js and smooth animation using GSAP. As a fresher,I'm constantly exploring new web technologies and improving my skill to build projects that make a real impact.</p>
         <h3 className='text-xl font-semibold mb-3'>Education</h3>
         <div className="space-y-4 mb-6">
             <div className="border-l-2 border-blue-500 pl-4">
